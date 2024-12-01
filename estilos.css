@@ -42,6 +42,7 @@ header{
   margin: auto;
   padding: 5rem 1rem;
 }
+
 .contenedor-nav{
   padding: 2rem 1rem;
   display: flex;
@@ -117,14 +118,6 @@ a{
   max-width: 350px;
 }
 
-.formulario-header1{
-  display: grid;
-  gap: 1rem;
-  padding: 2rem;
-  background-color: var(--blanco);
-  border-radius: 10px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
 
 .formulario-header-h4{
   font-size: 1.5rem;
@@ -153,6 +146,15 @@ a{
 
 .formulario-Boton :hover{
   background-color: var(--color-primario-oscuro);
+}
+
+.formulario-header1{
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .service-header{
@@ -242,13 +244,6 @@ a{
 
 .service-card-a:hover{
   color: var(--color-primario-oscuro);
-}
-
-.contenedor-nosotros{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: center;
 }
 
 .contenido-nosotros-p{
@@ -494,6 +489,7 @@ a{
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: auto;
 }
 
 .imagen-b {
@@ -509,11 +505,13 @@ a{
   border-radius: 10px;
 }
 
-.contenedor-blog {
+.contenedor-blog
+.contenedor-section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
 }
 
 .contenido-blog {
@@ -551,6 +549,7 @@ a{
 }
 
 .miniblog{
+  margin-top: 70px;
   flex-direction:row;
   display: flex;
   justify-content: space-between;
@@ -563,19 +562,21 @@ a{
   flex-basis: 10%;
   order: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position:relative;
+  font-size: 1rem;
   
 }
 
 .subtexto {
-  flex-direction: column column-reverse;
+  flex-direction: column-reverse;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   position: absolute;
   right: 20px;
+
 }
 
 .subtexto {
@@ -583,3 +584,37 @@ a{
   order: 1;
 }
 
+.contenido-nosotros {
+  flex-direction:row row-reverse;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.imagen-n {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+
+.imagen-2 {
+  max-width: 70%;
+  border-radius: 10px;
+}
+
+.textos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+
+}
+
+.textos {
+  flex-basis: 50%;
+  order: 0;
+}
